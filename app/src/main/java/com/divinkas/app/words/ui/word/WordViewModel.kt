@@ -4,9 +4,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.divinkas.app.words.base.viewmodel.AbstractScreenViewModel
-import com.divinkas.app.words.domain.entities.Category
-import com.divinkas.app.words.domain.entities.Word
-import com.divinkas.app.words.domain.view.WordCategoryModel
+import com.divinkas.app.words.bean.entities.Category
+import com.divinkas.app.words.bean.entities.Word
+import com.divinkas.app.words.bean.WordCategoryModel
 import com.divinkas.app.words.room.repository.CategoryRepository
 import com.divinkas.app.words.room.repository.WordRepository
 import com.divinkas.app.words.utils.DataConverter

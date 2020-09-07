@@ -8,7 +8,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.divinkas.app.words.R
 import com.divinkas.app.words.databinding.ActivityMainBinding
 import com.divinkas.app.words.helper.ext.binding
-import com.divinkas.app.words.ui.base.AbstractScreenActivity
+import com.divinkas.app.words.ui.AbstractScreenActivity
 
 class MainActivity : AbstractScreenActivity() {
     private lateinit var binding: ActivityMainBinding

@@ -2,8 +2,8 @@ package com.divinkas.app.words.room.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.divinkas.app.words.domain.entities.QuestionWord
-import com.divinkas.app.words.domain.entities.Word
+import com.divinkas.app.words.bean.entities.QuestionWord
+import com.divinkas.app.words.bean.entities.Word
 import com.divinkas.app.words.utils.ConstRoom
 
 @Dao

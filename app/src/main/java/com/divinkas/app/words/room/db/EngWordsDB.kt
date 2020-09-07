@@ -4,9 +4,9 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.divinkas.app.words.domain.entities.Category
-import com.divinkas.app.words.domain.entities.QuestionWord
-import com.divinkas.app.words.domain.entities.Word
+import com.divinkas.app.words.bean.entities.Category
+import com.divinkas.app.words.bean.entities.QuestionWord
+import com.divinkas.app.words.bean.entities.Word
 import com.divinkas.app.words.room.dao.ICategoryDao
 import com.divinkas.app.words.room.dao.IWordsDao
 import com.divinkas.app.words.utils.ConstRoom

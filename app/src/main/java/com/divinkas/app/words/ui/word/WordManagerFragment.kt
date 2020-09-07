@@ -7,7 +7,7 @@ import com.divinkas.app.words.databinding.FragmentWordManagerBinding
 import com.divinkas.app.words.helper.ext.bindView
 import com.divinkas.app.words.helper.ext.observeLiveData
 import com.divinkas.app.words.helper.ext.toast
-import com.divinkas.app.words.ui.adapter.spinner.CategorySpinnerAdapter
+import com.divinkas.app.words.ui.word.adapter.CategorySpinnerAdapter
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class WordManagerFragment : AbstractScreenFragment<WordViewModel>(R.layout.fragment_word_manager) {
@@ -21,7 +21,11 @@ class WordManagerFragment : AbstractScreenFragment<WordViewModel>(R.layout.fragm
     }
 
     override fun setupUi() {
-        adapter = CategorySpinnerAdapter(context!!, R.layout.item_category_spinner, ArrayList())
+        adapter = CategorySpinnerAdapter(
+            context!!,
+            R.layout.item_category_spinner,
+            ArrayList()
+        )
         binding.categorySpinner.adapter = adapter
 
         viewModel.loadCategories()

@@ -6,7 +6,7 @@
 
         <variable
             name="category"
-            type="com.divinkas.app.words.domain.entities.Category" />
+            type="com.divinkas.app.words.bean.entities.Category" />
     </data>
 
     <TextView

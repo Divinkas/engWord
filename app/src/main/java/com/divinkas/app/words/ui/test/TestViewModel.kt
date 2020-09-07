@@ -2,7 +2,7 @@ package com.divinkas.app.words.ui.test
 
 import androidx.lifecycle.viewModelScope
 import com.divinkas.app.words.base.viewmodel.AbstractScreenViewModel
-import com.divinkas.app.words.domain.entities.Word
+import com.divinkas.app.words.bean.entities.Word
 import com.divinkas.app.words.room.repository.WordRepository
 import kotlinx.coroutines.launch
 import org.koin.core.inject

@@ -19,6 +19,7 @@ class HomeFragment : AbstractScreenFragment<HomeViewModel>(R.layout.fragment_hom
         binding.wordsContainer.setOnClickListener {
             viewModel.openWordFragment()
         }
+
         binding.questionContainer.setOnClickListener {
             // open test Fragment
         }

@@ -7,7 +7,7 @@ import com.divinkas.app.words.base.fragment.AbstractScreenFragment
 import com.divinkas.app.words.databinding.FragmentWordsBinding
 import com.divinkas.app.words.helper.ext.bindView
 import com.divinkas.app.words.helper.ext.observeLiveData
-import com.divinkas.app.words.ui.adapter.recycler.BaseWordAdapter
+import com.divinkas.app.words.ui.word.adapter.BaseWordAdapter
 import com.divinkas.app.words.utils.SpaceItemDecoration
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -15,7 +15,8 @@ class WordFragment : AbstractScreenFragment<WordViewModel>(R.layout.fragment_wor
     override val viewModel: WordViewModel by viewModel()
 
     private lateinit var binding: FragmentWordsBinding
-    private val adapter: BaseWordAdapter = BaseWordAdapter(ArrayList())
+    private val adapter: BaseWordAdapter =
+        BaseWordAdapter(ArrayList())
 
     override fun setupUi() {
         binding.wordsRecycler.layoutManager = LinearLayoutManager(context)

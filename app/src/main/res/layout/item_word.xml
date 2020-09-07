@@ -6,7 +6,7 @@
     <data>
         <variable
             name="word"
-            type="com.divinkas.app.words.domain.entities.Word" />
+            type="com.divinkas.app.words.bean.entities.Word" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

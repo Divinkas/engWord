@@ -8,7 +8,6 @@ import com.divinkas.app.words.databinding.FragmentCategoryBinding
 import com.divinkas.app.words.helper.ext.bindView
 import com.divinkas.app.words.helper.ext.observeLiveData
 import com.divinkas.app.words.helper.ext.showDialog
-import com.divinkas.app.words.ui.adapter.recycler.CategoryAdapter
 import com.divinkas.app.words.ui.dialog.CustomViewDialog
 import com.divinkas.app.words.utils.SpaceItemDecoration
 import kotlinx.android.synthetic.main.dialog_add_category.view.*

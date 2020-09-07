@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.divinkas.app.words.base.viewmodel.AbstractScreenViewModel
-import com.divinkas.app.words.domain.entities.Category
+import com.divinkas.app.words.bean.entities.Category
 import com.divinkas.app.words.room.repository.CategoryRepository
 import kotlinx.coroutines.launch
 import org.koin.core.inject

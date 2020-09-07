@@ -1,6 +1,6 @@
 package com.divinkas.app.words.base.viewmodel
 
-import com.divinkas.app.words.domain.data.ErrorLoad
+import com.divinkas.app.words.bean.ErrorLoad
 
 sealed class LoadingViewState<T> {
     class Loading<T> : LoadingViewState<T>()

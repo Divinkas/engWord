@@ -1,7 +1,7 @@
 package com.divinkas.app.words.room.repository
 
 import androidx.lifecycle.LiveData
-import com.divinkas.app.words.domain.entities.Word
+import com.divinkas.app.words.bean.entities.Word
 import com.divinkas.app.words.room.db.EngWordsDB
 import java.util.*
 
