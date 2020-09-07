@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSmall">12sp</dimen>
+    <dimen name="textDefault">14sp</dimen>
+    <dimen name="textMedium">16sp</dimen>
+    <dimen name="textLarge">18sp</dimen>
+    <dimen name="textLarge_X">20sp</dimen>
+    <dimen name="textLarge_X_X">22sp</dimen>
+    <dimen name="textLarge_X_X_X">24sp</dimen>
+
+    <dimen name="defaultMargin">16dp</dimen>
+    <dimen name="defaultPadding">8dp</dimen>
+
+    <dimen name="space_small">8dp</dimen>
+    <dimen name="space_medium">16dp</dimen>
+    <dimen name="space_medium_large">18dp</dimen>
+    <dimen name="space_large">24dp</dimen>
+    <dimen name="space_x_large">32dp</dimen>
+    <dimen name="space_xx_large">40dp</dimen>
+    <dimen name="space_xxx_large">56dp</dimen>
+</resources>

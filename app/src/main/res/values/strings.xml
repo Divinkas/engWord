@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">words</string>
+
+    <string name="error_load">Error loading</string>
+
+
+    <string name="navigation_drawer_open">drawer open</string>
+    <string name="navigation_drawer_close">drawer close</string>
+
+    <string name="home">Home</string>
+    <string name="setting">Settings</string>
+    <string name="your_book">Your Book</string>
+    <string name="words_descriptions">Look, add, change, sort your words</string>
+    <string name="learn_words">Learn words</string>
+    <string name="it_s_tests_use_right_variant_of_four_word">It\'s tests - use right variant of four word</string>
+    <string name="answers">Answers</string>
+    <string name="questions_description">Learn words by given answers on questions</string>
+    <string name="enter_new_word">Enter new word</string>
+    <string name="enter_translate">Enter translate</string>
+    <string name="save">Save</string>
+    <string name="add_category">Add category …</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="word_is_added">Word is added</string>
+</resources>

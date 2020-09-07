@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Btn" />
+
+    <style name="AppTheme.Btn.ConstraintLabel" parent="AppTheme.Btn">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/bg_outline_gray_ripple</item>
+        <item name="android:padding">@dimen/defaultPadding</item>
+    </style>
+
+    <style name="AppTheme.Btn.TextButton" parent="AppTheme.Btn.ConstraintLabel">
+        <item name="android:background">@drawable/primary_ripple</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/josefin_sans_regular</item>
+        <item name="android:textSize">@dimen/textLarge_X</item>
+    </style>
+</resources>

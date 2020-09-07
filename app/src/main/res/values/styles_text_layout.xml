@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.TextInputLayout"/>
+
+    <style name="AppTheme.TextInputLayout.ErrorText" parent="TextAppearance.Design.Error">
+        <item name="android:fontFamily">@font/josefin_sans_light</item>
+        <item name="android:textColor">@color/colorError</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout.HintText" parent="TextAppearance.Design.Hint">
+        <item name="android:fontFamily">@font/josefin_sans_light</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout.WithErr" parent="AppTheme.TextInputLayout">
+        <item name="hintTextAppearance">@style/AppTheme.TextInputLayout.HintText</item>
+        <item name="errorTextAppearance">@style/AppTheme.TextInputLayout.ErrorText</item>
+    </style>
+</resources>

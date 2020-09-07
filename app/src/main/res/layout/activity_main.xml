@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.main.MainActivity">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                app:elevation="0dp">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    style="@style/AppTheme.Toolbar.Default"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:contentInsetStart="0dp"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    tools:title="@string/app_name" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <fragment
+                android:id="@+id/nav_graph_fragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:navGraph="@navigation/main_nav_graph" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/colorWhite"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/header_layout"
+            app:itemBackground="@drawable/navigation_drawer_item_selector"
+            app:itemIconTint="@color/navigation_drawer_selector"
+            app:itemTextColor="@color/navigation_text_selector"
+            app:menu="@menu/main_menu"
+            app:theme="@style/ThemeOverlay.AppCompat.navTheme" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

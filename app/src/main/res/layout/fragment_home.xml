@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wordsContainer"
+            style="@style/AppTheme.Btn.ConstraintLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/wordIcon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/img_book"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvWordTitle"
+                style="@style/AppTheme.TextView.MenuTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/your_book"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/wordIcon"
+                app:layout_constraintTop_toTopOf="@+id/wordIcon" />
+
+            <TextView
+                android:id="@+id/tvWordDescription"
+                style="@style/AppTheme.TextView.MenuDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/words_descriptions"
+                app:layout_constraintEnd_toEndOf="@+id/tvWordTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvWordTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvWordTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/test4Container"
+            style="@style/AppTheme.Btn.ConstraintLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wordsContainer">
+
+            <ImageView
+                android:id="@+id/test4Icon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/img_idea"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTest4Title"
+                style="@style/AppTheme.TextView.MenuTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/learn_words"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/test4Icon"
+                app:layout_constraintTop_toTopOf="@+id/test4Icon" />
+
+            <TextView
+                android:id="@+id/tvTest4Description"
+                style="@style/AppTheme.TextView.MenuDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/it_s_tests_use_right_variant_of_four_word"
+                app:layout_constraintEnd_toEndOf="@+id/tvTest4Title"
+                app:layout_constraintStart_toStartOf="@+id/tvTest4Title"
+                app:layout_constraintTop_toBottomOf="@+id/tvTest4Title" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/questionContainer"
+            style="@style/AppTheme.Btn.ConstraintLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/test4Container">
+
+            <ImageView
+                android:id="@+id/questionIcon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/img_questions"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/questionTitle"
+                style="@style/AppTheme.TextView.MenuTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/answers"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/questionIcon"
+                app:layout_constraintTop_toTopOf="@+id/questionIcon" />
+
+            <TextView
+                android:id="@+id/tvQuestionDescription"
+                style="@style/AppTheme.TextView.MenuDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/questions_description"
+                app:layout_constraintEnd_toEndOf="@+id/questionTitle"
+                app:layout_constraintStart_toStartOf="@+id/questionTitle"
+                app:layout_constraintTop_toBottomOf="@+id/questionTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:checkable="true"
+        android:fontFamily="@font/josefin_sans_regular_xml"
+        android:icon="@drawable/ic_book"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/settingFragment"
+        android:checkable="true"
+        android:fontFamily="@font/josefin_sans_regular_xml"
+        android:icon="@drawable/ic_library"
+        android:title="@string/setting" />
+</menu>

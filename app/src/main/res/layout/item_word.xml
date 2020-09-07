@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="word"
+            type="com.divinkas.app.words.domain.entities.Word" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemWordContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="?backgroundColorItem">
+
+        <TextView
+            android:id="@+id/wordName"
+            style="@style/AppTheme.TextView.MenuTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@{word.word}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="English" />
+
+        <TextView
+            android:id="@+id/wordTranslate"
+            style="@style/AppTheme.TextView.Secondary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@{word.translate}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/wordName"
+            app:layout_constraintStart_toStartOf="@+id/wordName"
+            app:layout_constraintTop_toBottomOf="@+id/wordName"
+            tools:text="Английский" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

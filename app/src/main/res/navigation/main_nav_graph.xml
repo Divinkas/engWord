@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.divinkas.app.words.ui.main.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_wordFragment"
+            app:destination="@id/wordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.divinkas.app.words.ui.setting.SettingFragment"
+        android:label="@string/setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/wordFragment"
+        android:name="com.divinkas.app.words.ui.word.WordFragment"
+        android:label="wordFragment"
+        tools:layout="@layout/fragment_words">
+        <action
+            android:id="@+id/action_wordFragment_to_wordManagerFragment"
+            app:destination="@id/wordManagerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wordManagerFragment"
+        android:name="com.divinkas.app.words.ui.word.WordManagerFragment"
+        android:label="wordManager"
+        tools:layout="@layout/fragment_word_manager" >
+        <action
+            android:id="@+id/action_wordManagerFragment_to_categoryManagerFragment"
+            app:destination="@id/categoryManagerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoryManagerFragment"
+        android:name="com.divinkas.app.words.ui.category.CategoryManagerFragment"
+        android:label="Category Manager"
+        tools:layout="@layout/fragment_category" />
+</navigation>

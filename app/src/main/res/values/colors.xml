@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0db665</color>
+    <color name="colorPrimaryDark">#008539</color>
+    <color name="colorAccent">#a0e2bf</color>
+
+    <color name="colorWhite">#fff</color>
+    <color name="bodyBg">#E4E4E4</color>
+    <color name="lineColor">#F1F1F1</color>
+
+    <color name="primaryTextColor">#2f2f2f</color>
+    <color name="secondaryTextColor">#959595</color>
+    <color name="navMenuSelectedColor">#0db665</color>
+    <color name="lightGreen">#40ABFFD7</color>
+    <color name="checkedBackground">#80a0e2bf</color>
+
+    <color name="colorBlue">#4285f4</color>
+    <color name="colorGreen">#0db665</color>
+    <color name="colorOrange">#ffa048</color>
+    <color name="colorError">#FF1313</color>
+
+    <color name="diagramColor1">#0db665</color>
+    <color name="diagramColor2">#4285f4</color>
+    <color name="diagramColor3">#ffa048</color>
+    <color name="diagramColor4">#303F9F</color>
+    <color name="diagramColor5">#FF1313</color>
+    <color name="diagramColor6">#9C27B0</color>
+    <color name="diagramColor7">#FFEB3B</color>
+    <color name="diagramColor8">#FF5722</color>
+    <color name="diagramColor9">#F50057</color>
+</resources>

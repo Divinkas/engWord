@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="category"
+            type="com.divinkas.app.words.domain.entities.Category" />
+    </data>
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{category.categoryName}"
+        android:padding="16dp"
+        android:fontFamily="@font/josefin_sans_regular"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/textMedium"
+        tools:text="Home" />
+</layout>

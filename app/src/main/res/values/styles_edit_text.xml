@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.DarkEditText">
+        <item name="android:background">@drawable/bg_edit_text</item>
+    </style>
+
+    <style name="AppTheme.EditText.MediumPadding" parent="AppTheme.DarkEditText">
+        <item name="android:padding">@dimen/space_medium</item>
+    </style>
+
+    <style name="AppTheme.EditText.Default.Josefin.Light" parent="AppTheme.EditText.MediumPadding">
+        <item name="android:fontFamily">@font/josefin_sans_light</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textColorHint">@color/secondaryTextColor</item>
+        <item name="android:textSize">@dimen/textMedium</item>
+    </style>
+</resources>
