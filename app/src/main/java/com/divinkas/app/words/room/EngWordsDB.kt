@@ -1,4 +1,4 @@
-package com.divinkas.app.words.room.db
+package com.divinkas.app.words.room
 
 import android.content.Context
 import androidx.room.Database
@@ -7,8 +7,8 @@ import androidx.room.RoomDatabase
 import com.divinkas.app.words.bean.entities.Category
 import com.divinkas.app.words.bean.entities.QuestionWord
 import com.divinkas.app.words.bean.entities.Word
-import com.divinkas.app.words.room.dao.ICategoryDao
-import com.divinkas.app.words.room.dao.IWordsDao
+import com.divinkas.app.words.room.category.ICategoryDao
+import com.divinkas.app.words.room.word.IWordsDao
 import com.divinkas.app.words.utils.ConstRoom
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors

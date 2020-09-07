@@ -5,9 +5,11 @@ import com.divinkas.app.words.helper.navigation.Navigator
 import com.divinkas.app.words.helper.navigation.NavigatorImpl
 import com.divinkas.app.words.modules.LocalDataModule
 import com.divinkas.app.words.modules.NetworkModule
-import com.divinkas.app.words.room.db.EngWordsDB
-import com.divinkas.app.words.room.repository.CategoryRepository
-import com.divinkas.app.words.room.repository.WordRepository
+import com.divinkas.app.words.room.EngWordsDB
+import com.divinkas.app.words.room.category.CategoryRepository
+import com.divinkas.app.words.room.category.CategoryRepositoryImpl
+import com.divinkas.app.words.room.word.WordRepository
+import com.divinkas.app.words.room.word.WordRepositoryImpl
 import com.divinkas.app.words.ui.category.CategoryViewModel
 import com.divinkas.app.words.ui.main.HomeViewModel
 import com.divinkas.app.words.ui.setting.SettingViewModel
@@ -30,8 +32,16 @@ object KoinInstaller : ApplicationInstaller {
     }
 
     private val roomRepositories = module {
-        factory { WordRepository(get()) }
-        factory { CategoryRepository(get()) }
+        factory<WordRepository> {
+            WordRepositoryImpl(
+                get()
+            )
+        }
+        factory<CategoryRepository> {
+            CategoryRepositoryImpl(
+                get()
+            )
+        }
     }
 
     private val apiModules = module {

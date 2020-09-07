@@ -4,11 +4,11 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.divinkas.app.words.base.viewmodel.AbstractScreenViewModel
+import com.divinkas.app.words.bean.WordCategoryModel
 import com.divinkas.app.words.bean.entities.Category
 import com.divinkas.app.words.bean.entities.Word
-import com.divinkas.app.words.bean.WordCategoryModel
-import com.divinkas.app.words.room.repository.CategoryRepository
-import com.divinkas.app.words.room.repository.WordRepository
+import com.divinkas.app.words.room.category.CategoryRepository
+import com.divinkas.app.words.room.word.WordRepository
 import com.divinkas.app.words.utils.DataConverter
 import kotlinx.coroutines.launch
 import org.koin.core.inject
@@ -52,7 +52,7 @@ class WordViewModel : AbstractScreenViewModel() {
     }
 
     fun loadCategories() = viewModelScope.launch {
-        categoryLiveData = categoryRepository.loadCategories()
+        categoryLiveData = categoryRepository.loadAllCategories()
     }
 
     fun openWordManagerFragment() {
@@ -67,7 +67,7 @@ class WordViewModel : AbstractScreenViewModel() {
 
     fun loadData() = viewModelScope.launch {
         wordsLiveData = wordRepository.loadAllWords()
-        categoryLiveData = categoryRepository.loadCategories()
+        categoryLiveData = categoryRepository.loadAllCategories()
         observeWordCategoryLiveData()
     }
 

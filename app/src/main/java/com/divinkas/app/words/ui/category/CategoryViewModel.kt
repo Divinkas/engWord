@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.divinkas.app.words.base.viewmodel.AbstractScreenViewModel
 import com.divinkas.app.words.bean.entities.Category
-import com.divinkas.app.words.room.repository.CategoryRepository
+import com.divinkas.app.words.room.category.CategoryRepository
 import kotlinx.coroutines.launch
 import org.koin.core.inject
 
@@ -15,7 +15,7 @@ class CategoryViewModel : AbstractScreenViewModel() {
     var categoryLiveData: LiveData<List<Category>> = MutableLiveData<List<Category>>()
 
     fun loadCategories() = viewModelScope.launch {
-        categoryLiveData = categoryRepository.loadCategories()
+        categoryLiveData = categoryRepository.loadAllCategories()
     }
 
     fun insertCategoryAsync(nameCategory: String) {

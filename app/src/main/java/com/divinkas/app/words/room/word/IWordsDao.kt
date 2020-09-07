@@ -1,4 +1,4 @@
-package com.divinkas.app.words.room.dao
+package com.divinkas.app.words.room.word
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
