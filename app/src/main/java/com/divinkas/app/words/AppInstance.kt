@@ -1,4 +1,4 @@
-package com.divinkas.app.words.base
+package com.divinkas.app.words
 
 import android.app.Application
 import android.content.Context

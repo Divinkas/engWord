@@ -2,7 +2,7 @@ package com.divinkas.app.words.helper.navigation
 
 import android.content.Intent
 import android.os.Bundle
-import com.divinkas.app.words.base.AppInstance
+import com.divinkas.app.words.AppInstance
 import com.divinkas.app.words.ui.main.MainActivity
 
 class NavigatorImpl(private val appInstance: AppInstance) : Navigator {

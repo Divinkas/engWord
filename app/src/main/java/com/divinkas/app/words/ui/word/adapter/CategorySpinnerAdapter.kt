@@ -31,6 +31,14 @@ class CategorySpinnerAdapter(
 
     override fun getItemId(position: Int): Long = list[position].id!!.toLong()
 
+    override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup): View {
+        val binding: ItemCategorySpinnerBinding = DataBindingUtil.bind(
+            inflater.inflate(R.layout.item_category_spinner, parent, false)
+        )!!
+        binding.category = list[position]
+        return binding.root
+    }
+
     @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val binding: ItemCategorySpinnerBinding = DataBindingUtil.bind(

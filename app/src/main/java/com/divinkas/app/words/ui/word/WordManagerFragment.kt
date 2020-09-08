@@ -21,11 +21,7 @@ class WordManagerFragment : AbstractScreenFragment<WordViewModel>(R.layout.fragm
     }
 
     override fun setupUi() {
-        adapter = CategorySpinnerAdapter(
-            context!!,
-            R.layout.item_category_spinner,
-            ArrayList()
-        )
+        adapter = CategorySpinnerAdapter(context!!, R.layout.item_category_spinner, ArrayList())
         binding.categorySpinner.adapter = adapter
 
         viewModel.loadCategories()
@@ -50,6 +46,7 @@ class WordManagerFragment : AbstractScreenFragment<WordViewModel>(R.layout.fragm
                     binding.etTranslate.text.toString(),
                     adapter.getItem(binding.categorySpinner.selectedItemPosition)!!.id!!
                 )
+
                 binding.etWord.setText("")
                 binding.etTranslate.setText("")
                 toast(R.string.word_is_added)

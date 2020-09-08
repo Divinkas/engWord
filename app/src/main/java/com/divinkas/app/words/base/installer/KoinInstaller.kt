@@ -1,6 +1,6 @@
 package com.divinkas.app.words.base.installer
 
-import com.divinkas.app.words.base.AppInstance
+import com.divinkas.app.words.AppInstance
 import com.divinkas.app.words.helper.navigation.Navigator
 import com.divinkas.app.words.helper.navigation.NavigatorImpl
 import com.divinkas.app.words.modules.LocalDataModule
