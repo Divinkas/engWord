@@ -9,8 +9,8 @@ import android.widget.ArrayAdapter
 import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import com.divinkas.app.words.R
-import com.divinkas.app.words.databinding.ItemCategorySpinnerBinding
 import com.divinkas.app.words.bean.entities.Category
+import com.divinkas.app.words.databinding.ItemCategorySpinnerBinding
 
 class CategorySpinnerAdapter(
     ctx: Context,
@@ -32,15 +32,15 @@ class CategorySpinnerAdapter(
     override fun getItemId(position: Int): Long = list[position].id!!.toLong()
 
     override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val binding: ItemCategorySpinnerBinding = DataBindingUtil.bind(
-            inflater.inflate(R.layout.item_category_spinner, parent, false)
-        )!!
-        binding.category = list[position]
-        return binding.root
+        return getCustomView(position, parent)
     }
 
     @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+        return getCustomView(position, parent)
+    }
+
+    private fun getCustomView(position: Int, parent: ViewGroup): View {
         val binding: ItemCategorySpinnerBinding = DataBindingUtil.bind(
             inflater.inflate(R.layout.item_category_spinner, parent, false)
         )!!
