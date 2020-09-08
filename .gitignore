@@ -1,0 +1,9 @@
+/.gradle/
+/.idea/
+/buildSrc/.gradle/
+/buildSrc/build/classes/kotlin/main/
+/buildSrc/build/reports/plugin-development/
+.DS_Store
+app/.DS_Store
+app/src/.DS_Store
+/engWord.iml
