@@ -10,21 +10,23 @@ import com.divinkas.app.words.bean.entities.Word
 import com.divinkas.app.words.room.category.CategoryRepository
 import com.divinkas.app.words.room.word.WordRepository
 import com.divinkas.app.words.utils.DataConverter
+import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 import org.koin.core.inject
 
 class WordViewModel : AbstractScreenViewModel() {
-    var wordsLiveData: LiveData<List<Word>> = MutableLiveData<List<Word>>()
-    var categoryLiveData: LiveData<List<Category>> = MutableLiveData<List<Category>>()
-
-    var wordCategoryLiveData: LiveData<List<WordCategoryModel>> =
-        MutableLiveData<List<WordCategoryModel>>()
-
     private val wordRepository: WordRepository by inject()
     private val categoryRepository: CategoryRepository by inject()
 
+    var wordsLiveData: LiveData<List<Word>> = MutableLiveData<List<Word>>()
+    var categoryLiveData: LiveData<List<Category>> = MutableLiveData<List<Category>>()
+    var wordCategoryLiveData: LiveData<List<WordCategoryModel>> =
+        MutableLiveData<List<WordCategoryModel>>()
+
     fun insertWord(word: String, translate: String, kodCategory: Int) {
-        wordRepository.insert(word, translate, kodCategory)
+        viewModelScope.async {
+            wordRepository.insert(word, translate, kodCategory)
+        }
     }
 
     private fun observeWordCategoryLiveData() {

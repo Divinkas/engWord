@@ -5,6 +5,7 @@ import com.divinkas.app.words.helper.navigation.Navigator
 import com.divinkas.app.words.helper.navigation.NavigatorImpl
 import com.divinkas.app.words.modules.LocalDataModule
 import com.divinkas.app.words.modules.NetworkModule
+import com.divinkas.app.words.modules.storage.AppSetting
 import com.divinkas.app.words.room.EngWordsDB
 import com.divinkas.app.words.room.category.CategoryRepository
 import com.divinkas.app.words.room.category.CategoryRepositoryImpl
@@ -27,8 +28,9 @@ object KoinInstaller : ApplicationInstaller {
         single { androidApplication() as AppInstance }
         single<Navigator> { NavigatorImpl(get()) }
         single { LocalDataModule(get()) }
+        single { AppSetting(get()) }
         single { NetworkModule(get()) }
-        single { EngWordsDB.getDatabase(get())}
+        single { EngWordsDB.getDatabase(get()) }
     }
 
     private val roomRepositories = module {
