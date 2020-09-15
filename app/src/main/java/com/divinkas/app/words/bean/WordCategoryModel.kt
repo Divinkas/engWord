@@ -7,4 +7,6 @@ data class WordCategoryModel(
     val category: Category? = null,
     val word: Word? = null,
     val isCategory: Boolean
-)
+) {
+    constructor(category: Category?, word: Word?) : this(category, word, category != null)
+}

@@ -12,11 +12,6 @@
         android:checkable="true"
         android:icon="@drawable/ic_owl"
         android:title="@string/learn_words" />
-    <item
-        android:id="@+id/addWordScreen"
-        android:checkable="true"
-        android:icon="@drawable/ic_add"
-        android:title="@string/learn_words" />
 
     <item
         android:id="@+id/statisticScreen"
