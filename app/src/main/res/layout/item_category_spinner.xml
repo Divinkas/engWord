@@ -13,10 +13,11 @@
         android:id="@+id/tvCategory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@{category.categoryName}"
-        android:padding="16dp"
+        android:background="?attr/backgroundBody"
         android:fontFamily="@font/josefin_sans_regular"
-        android:textColor="@color/primaryTextColor"
+        android:padding="16dp"
+        android:text="@{category.categoryName}"
+        android:textColor="?attr/textColorPrimary"
         android:textSize="@dimen/textMedium"
         tools:text="Home" />
 </layout>

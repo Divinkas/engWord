@@ -57,14 +57,14 @@ class CategoryManagerFragment :
     private fun showCustomViewDialog() {
         val dialog = CustomViewDialog(R.layout.dialog_add_category)
         dialog.initView = {
-            it.dialogAddCategory.setOnClickListener {
+            it.btnAddCategory.setOnClickListener {
                 dialog.acceptDialog {
                     if (!dialog.rootView?.etCategory?.text.isNullOrEmpty()) {
-                        viewModel.insertCategoryAsync(dialog.rootView?.etCategory?.text.toString())
+                        viewModel.addCategory(dialog.rootView?.etCategory?.text.toString())
                     }
                 }
             }
-            it.dialogBtnCancel.setOnClickListener { dialog.cancelDialog() }
+            it.btnCancel.setOnClickListener { dialog.cancelDialog() }
         }
         showDialog(dialog)
     }

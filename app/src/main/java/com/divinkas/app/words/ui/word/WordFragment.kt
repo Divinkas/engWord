@@ -35,6 +35,7 @@ class WordFragment : AbstractScreenFragment<WordViewModel>(R.layout.fragment_wor
         observeLiveData(viewModel.wordCategoryLiveData) {
             adapter.clearData()
             adapter.addWords(it)
+            binding.swipeWordLayout.isRefreshing = false
         }
     }
 
@@ -49,8 +50,7 @@ class WordFragment : AbstractScreenFragment<WordViewModel>(R.layout.fragment_wor
 
         binding.swipeWordLayout.setOnRefreshListener {
             adapter.clearData()
-            adapter.addWords(viewModel.wordCategoryLiveData.value!!)
-            binding.swipeWordLayout.isRefreshing = false
+            viewModel.loadData()
         }
     }
 }

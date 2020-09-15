@@ -77,7 +77,7 @@ private fun Fragment.showSnackBar(message: String, type: Int) {
     val snackBar = Snackbar.make(view!!, message, type)
     val textView: TextView =
         snackBar.view.findViewById(com.google.android.material.R.id.snackbar_text)
-    textView.setTextColor(ContextCompat.getColor(context!!, R.color.colorWhite))
+    textView.setTextColor(ContextCompat.getColor(context!!, R.color.colorPrimary))
     snackBar.show()
 }
 

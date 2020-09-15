@@ -11,9 +11,23 @@
 
     <style name="AppTheme.Btn.TextButton" parent="AppTheme.Btn.ConstraintLabel">
         <item name="android:background">@drawable/primary_ripple</item>
-        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColor">?attr/textColorPrimary</item>
         <item name="android:textAlignment">center</item>
         <item name="android:fontFamily">@font/josefin_sans_regular</item>
         <item name="android:textSize">@dimen/textLarge_X</item>
+    </style>
+
+    <style name="AppTheme.Btn.Active" parent="AppTheme.Btn">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/josefin_sans_regular</item>
+        <item name="android:paddingStart">@dimen/space_large</item>
+        <item name="android:paddingEnd">@dimen/space_large</item>
+        <item name="android:paddingTop">@dimen/defaultPadding</item>
+        <item name="android:paddingBottom">@dimen/defaultPadding</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
     </style>
 </resources>

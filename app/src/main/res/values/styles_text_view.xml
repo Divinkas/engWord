@@ -4,7 +4,7 @@
     <style name="AppTheme.TextView" />
 
     <style name="AppTheme.TextView.Primary" parent="AppTheme.TextView">
-        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textColor">?attr/textColorPrimary</item>
         <item name="android:textSize">@dimen/textDefault</item>
     </style>
 
@@ -15,6 +15,13 @@
 
     <style name="AppTheme.TextView.MenuTitle" parent="AppTheme.TextView.Primary">
         <item name="android:textSize">@dimen/textLarge_X</item>
+        <item name="android:fontFamily">@font/montserrat_bold_xml</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="AppTheme.TextView.WordTitle" parent="AppTheme.TextView.Primary">
+        <item name="android:textSize">@dimen/textMedium</item>
         <item name="android:fontFamily">@font/montserrat_bold_xml</item>
         <item name="android:maxLines">1</item>
         <item name="android:ellipsize">end</item>

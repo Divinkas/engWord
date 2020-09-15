@@ -8,7 +8,7 @@
     <dimen name="textLarge_X_X">22sp</dimen>
     <dimen name="textLarge_X_X_X">24sp</dimen>
 
-    <dimen name="defaultMargin">16dp</dimen>
+    <dimen name="defaultMargin">24dp</dimen>
     <dimen name="defaultPadding">8dp</dimen>
 
     <dimen name="space_small">8dp</dimen>
@@ -18,4 +18,6 @@
     <dimen name="space_x_large">32dp</dimen>
     <dimen name="space_xx_large">40dp</dimen>
     <dimen name="space_xxx_large">56dp</dimen>
+
+    <dimen name="fab_margin_default">32dp</dimen>
 </resources>

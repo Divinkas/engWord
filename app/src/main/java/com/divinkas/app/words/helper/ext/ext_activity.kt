@@ -68,7 +68,7 @@ fun Activity.showSnackBarWithAction(
     }
     val textView: TextView =
         snackBar.view.findViewById(com.google.android.material.R.id.snackbar_text)
-    textView.setTextColor(ContextCompat.getColor(baseContext, R.color.colorWhite))
+    textView.setTextColor(ContextCompat.getColor(baseContext, R.color.colorPrimary))
     snackBar.addCallback(object : BaseTransientBottomBar.BaseCallback<Snackbar>() {
         override fun onDismissed(transientBottomBar: Snackbar?, event: Int) {
             super.onDismissed(transientBottomBar, event)

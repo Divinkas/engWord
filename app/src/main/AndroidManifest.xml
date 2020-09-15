@@ -15,7 +15,7 @@
 
         <activity android:name=".ui.main.MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.DefaultTheme"
+            android:theme="@style/AppTheme.DarkTheme"
             tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#0db665</color>
-    <color name="colorPrimaryDark">#008539</color>
-    <color name="colorAccent">#a0e2bf</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffc700</color>
 
-    <color name="colorWhite">#fff</color>
-    <color name="bodyBg">#E4E4E4</color>
-    <color name="lineColor">#F1F1F1</color>
+    <color name="primaryLight">#ffffff</color>
+    <color name="primaryDarkLight">#ffffff</color>
 
-    <color name="primaryTextColor">#2f2f2f</color>
+    <color name="primaryDark">#282a36</color>
+    <color name="PrimaryDarkDark">#282a36</color>
+
+    <color name="primaryTextColorLight">#111111</color>
+    <color name="primaryTextColorDark">#ffffff</color>
+
+    <color name="secondTextColorLight">#2f2f2f</color>
+    <color name="secondTextColorDark">#b7bac1</color>
+
+    <color name="bodyBackgroundLight">#E4E4E4</color>
+    <color name="bodyBackgroundDark">#E4E4E4</color>
+
+    <color name="bodyBackgroundSecondDark">#44475a</color>
+    <color name="bodyBackgroundSecondLight">#cccccc</color>
+
     <color name="secondaryTextColor">#959595</color>
     <color name="navMenuSelectedColor">#0db665</color>
     <color name="lightGreen">#40ABFFD7</color>
@@ -17,7 +30,8 @@
     <color name="colorBlue">#4285f4</color>
     <color name="colorGreen">#0db665</color>
     <color name="colorOrange">#ffa048</color>
-    <color name="colorError">#FF1313</color>
+
+    <color name="colorError">#FF403b</color>
 
     <color name="diagramColor1">#0db665</color>
     <color name="diagramColor2">#4285f4</color>

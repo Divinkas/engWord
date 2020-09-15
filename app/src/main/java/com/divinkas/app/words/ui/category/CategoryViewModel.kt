@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.divinkas.app.words.base.viewmodel.AbstractScreenViewModel
 import com.divinkas.app.words.bean.entities.Category
 import com.divinkas.app.words.room.category.CategoryRepository
+import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 import org.koin.core.inject
 
@@ -18,7 +19,9 @@ class CategoryViewModel : AbstractScreenViewModel() {
         categoryLiveData = categoryRepository.loadAllCategories()
     }
 
-    fun insertCategoryAsync(nameCategory: String) {
-        categoryRepository.insert(Category(categoryName = nameCategory))
+    fun addCategory(nameCategory: String) {
+        viewModelScope.async {
+            categoryRepository.insert(Category(categoryName = nameCategory))
+        }
     }
 }

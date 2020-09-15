@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <attr name="backgroundBody" format="reference" />
+    <attr name="bodyBackgroundSecond" format="reference" />
 
     <attr name="textColorPrimary" format="reference" />
     <attr name="textColorSecondary" format="reference" />
-    <attr name="backgroundColorItem" format="reference" />
+    <attr name="itemBackground" format="reference" />
 </resources>
