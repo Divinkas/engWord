@@ -24,4 +24,5 @@
     <string name="word_is_added">Word is added</string>
 
     <string name="empty_string" />
+    <string name="statistic">Statistic</string>
 </resources>

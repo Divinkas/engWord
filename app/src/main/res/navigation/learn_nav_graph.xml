@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/learn_nav_graph"
+    app:startDestination="@id/learnScreen">
+
+    <fragment
+        android:id="@+id/learnScreen"
+        android:name="com.divinkas.app.words.ui.learn.LearnMainScreen"
+        android:label="Learn Screen"
+        tools:layout="@layout/learn_screen" />
+</navigation>

@@ -20,12 +20,6 @@
     </fragment>
 
     <fragment
-        android:id="@+id/settingFragment"
-        android:name="com.divinkas.app.words.ui.setting.SettingFragment"
-        android:label="@string/setting"
-        tools:layout="@layout/fragment_setting" />
-
-    <fragment
         android:id="@+id/wordFragment"
         android:name="com.divinkas.app.words.ui.word.WordFragment"
         android:label="wordFragment"

@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 import com.divinkas.app.words.R
 import com.divinkas.app.words.base.viewmodel.AbstractScreenViewModel
@@ -34,10 +35,13 @@ abstract class AbstractScreenFragment<VM : AbstractScreenViewModel>(
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel.navController = findNavController()
         setupNavArgs()
         setupUi()
         setupLiveDataObservers()
+    }
+
+    fun navigateTo(directions: NavDirections) {
+        findNavController().navigate(directions)
     }
 
     protected fun showErrorLoadToast() {

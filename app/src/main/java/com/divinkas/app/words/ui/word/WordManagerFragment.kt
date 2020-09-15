@@ -36,7 +36,7 @@ class WordManagerFragment : AbstractScreenFragment<WordViewModel>(R.layout.fragm
 
     private fun setListeners() {
         binding.btnAddCategory.setOnClickListener {
-            viewModel.openCategoryManagerFragment()
+            navigateTo(WordManagerFragmentDirections.actionWordManagerFragmentToCategoryManagerFragment())
         }
 
         binding.btnSaveWord.setOnClickListener {

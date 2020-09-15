@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/wordScreen"
         android:checkable="true"
         android:fontFamily="@font/josefin_sans_regular_xml"
         android:icon="@drawable/ic_book"
         android:title="@string/home" />
 
     <item
-        android:id="@+id/settingFragment"
+        android:id="@+id/learnScreen"
+        android:checkable="true"
+        android:icon="@drawable/ic_owl"
+        android:title="@string/learn_words" />
+    <item
+        android:id="@+id/addWordScreen"
+        android:checkable="true"
+        android:icon="@drawable/ic_add"
+        android:title="@string/learn_words" />
+
+    <item
+        android:id="@+id/statisticScreen"
+        android:checkable="true"
+        android:icon="@drawable/ic_chart"
+        android:title="@string/statistic" />
+
+    <item
+        android:id="@+id/settingScreen"
         android:checkable="true"
         android:fontFamily="@font/josefin_sans_regular_xml"
         android:icon="@drawable/ic_library"

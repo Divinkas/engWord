@@ -45,7 +45,7 @@ class WordFragment : AbstractScreenFragment<WordViewModel>(R.layout.fragment_wor
         }
 
         binding.btnAddWord.setOnClickListener {
-            viewModel.openWordManagerFragment()
+            navigateTo(WordFragmentDirections.actionWordFragmentToWordManagerFragment())
         }
 
         binding.swipeWordLayout.setOnRefreshListener {

@@ -57,16 +57,6 @@ class WordViewModel : AbstractScreenViewModel() {
         categoryLiveData = categoryRepository.loadAllCategories()
     }
 
-    fun openWordManagerFragment() {
-        navController?.navigate(WordFragmentDirections.actionWordFragmentToWordManagerFragment())
-    }
-
-    fun openCategoryManagerFragment() {
-        navController?.navigate(
-            WordManagerFragmentDirections.actionWordManagerFragmentToCategoryManagerFragment()
-        )
-    }
-
     fun loadData() = viewModelScope.launch {
         wordsLiveData = wordRepository.loadAllWords()
         categoryLiveData = categoryRepository.loadAllCategories()

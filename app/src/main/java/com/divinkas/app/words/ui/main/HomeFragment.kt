@@ -17,7 +17,7 @@ class HomeFragment : AbstractScreenFragment<HomeViewModel>(R.layout.fragment_hom
 
     override fun setupUi() {
         binding.wordsContainer.setOnClickListener {
-            viewModel.openWordFragment()
+            navigateTo(HomeFragmentDirections.actionHomeFragmentToWordFragment())
         }
 
         binding.questionContainer.setOnClickListener {
